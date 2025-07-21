@@ -60,7 +60,22 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+    // 二维码显示/隐藏控制
+document.querySelectorAll('.social-card').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+        const qrCode = this.querySelector('.qr-code');
+        if (qrCode) {
+            qrCode.style.display = 'block';
+        }
+    });
     
+    card.addEventListener('mouseleave', function() {
+        const qrCode = this.querySelector('.qr-code');
+        if (qrCode) {
+            qrCode.style.display = 'none';
+        }
+    });
+});
 
     // 滚动时导航栏效果
     window.addEventListener('scroll', function() {
