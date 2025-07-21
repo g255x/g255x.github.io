@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页 - G255</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="main-nav">
+        <div class="nav-brand">G255</div>
+        <ul class="nav-links">
+            <li><a href="#about" class="nav-link active" data-page="about">关于我</a></li>
+            <li><a href="#work" class="nav-link" data-page="work">近期作品</a></li>
+            <li><a href="#contact" class="nav-link" data-page="contact">联系方式</a></li>
+            <li><a href="#social" class="nav-link" data-page="social">社交平台</a></li>
+        </ul>
+        <div class="nav-toggle">
+            <div class="hamburger"></div>
+        </div>
+    </nav>
+
+    <!-- 页面容器 -->
+    <main class="page-container">
+        <!-- 关于我页面 -->
+        <section id="about" class="page active">
+            <div class="page-content animate-in">
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <img src="profile.jpg" alt="个人照片" class="profile-img">
+                         <div class="image-overlay"></div>
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="page-title">你好，我是<span class="highlight">G255</span></h1>
+                        <h2 class="page-subtitle">一位普通的编程爱好者</h2>
+                        <p class="profile-text">我不仅是入，还会呼吸，会吃饭，会睡觉……更会写代码！</p>
+                        <div class="skills">
+                            <span class="skill-tag">会呼吸</span>
+                            <span class="skill-tag">会吃饭</span>
+                            <span class="skill-tag">会睡觉</span>
+                            <span class="skill-tag">写代码</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 近期作品页面 -->
+        <section id="work" class="page">
+            <div class="page-content animate-in">
+                <h1 class="page-title">"近期"<span class="highlight">作品</span></h1>
+                <div class="work-grid">
+                    <div class="work-item">
+                        <div class="work-image">
+                            <img src="work/img/work1.jpg" alt="作品1">
+                            <div class="work-overlay">
+                                <h3>毒蘑菇显卡测试</h3>
+                                <p>原作者：by cznull@bilibili</p>
+                                <a href="work/zp1.html" class="view-btn">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-item">
+                        <div class="work-image">
+                            <img src="work/img/work2.jpg" alt="作品2">
+                            <div class="work-overlay">
+                                <h3>简易文件上传</h3>
+                                <p>使用php搭建的一个简易云盘</p>
+                                <a href="work/zp2.html" class="view-btn">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-item">
+                        <div class="work-image">
+                            <img src="work3.jpg" alt="作品3">
+                            <div class="work-overlay">
+                                <h3>作品标题3</h3>
+                                <p>作品简短描述</p>
+                                <a href="#" class="view-btn">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-item">
+                        <div class="work-image">
+                            <img src="work4.jpg" alt="作品4">
+                            <div class="work-overlay">
+                                <h3>作品标题4</h3>
+                                <p>作品简短描述</p>
+                                <a href="#" class="view-btn">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系方式页面 -->
+        <section id="contact" class="page">
+            <div class="page-content animate-in">
+                <h1 class="page-title">联系<span class="highlight">我</span></h1>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>g_255@qq.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+86 138 8050 4434</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>中国，四川成都</p>
+                        </div>
+                    </div>
+        </section>
+
+        <!-- 社交平台页面 -->
+        <section id="social" class="page">
+            <div class="page-content animate-in">
+                <h1 class="page-title">社交<span class="highlight">平台</span></h1>
+                <div class="social-grid">
+                    <a href="#" class="social-card weibo">
+                        <i class="fab fa-weibo"></i>
+                        <h3>微博</h3>
+                        <p>@你的微博账号</p>
+                    </a>
+                    <a href="#" class="social-card zhihu">
+                        <i class="fab fa-zhihu"></i>
+                        <h3>知乎</h3>
+                        <p>@你的知乎账号</p>
+                    </a>
+                    <a href="#" class="social-card github">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p>@你的GitHub账号</p>
+                    </a>
+                    <a href="#" class="social-card linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p>@你的LinkedIn账号</p>
+                    </a>
+                    <a href="#" class="social-card twitter">
+                        <i class="fab fa-twitter"></i>
+                        <h3>Twitter</h3>
+                        <p>@你的Twitter账号</p>
+                    </a>
+                    <a href="#" class="social-card instagram">
+                        <i class="fab fa-instagram"></i>
+                        <h3>Instagram</h3>
+                        <p>@你的Instagram账号</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
