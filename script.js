@@ -61,28 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // 表单提交
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // 这里可以添加表单验证和提交逻辑
-            alert('消息已发送！我会尽快回复你。');
-            this.reset();
-        });
-    }
-    
 
-    // 社交卡片点击效果
-    const socialCards = document.querySelectorAll('.social-card');
-    socialCards.forEach(card => {
-        card.addEventListener('click', function(e) {
-            e.preventDefault();
-            // 这里可以添加跳转到社交平台的逻辑
-            alert('将跳转到对应的社交平台');
-        });
-    });
     // 滚动时导航栏效果
     window.addEventListener('scroll', function() {
         const nav = document.querySelector('.main-nav');
