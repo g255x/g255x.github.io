@@ -423,11 +423,69 @@ a {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* 社交卡片样式调整 */
+.social-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    transition: var(--transition);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    min-height: 250px;
+}
+
 .social-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
+/* QQ样式 */
+.qq {
+    background: linear-gradient(135deg, #12b7f5, #0084ff);
+}
+
+/* 微信样式 */
+.wechat {
+    background: linear-gradient(135deg, #07C160, #05a84e);
+}
+
+/* GitHub样式保持不变 */
+.github {
+    background: linear-gradient(135deg, #333, #6e5494);
+}
+
+/* 二维码样式 */
+.qr-code {
+    margin-top: 15px;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    display: none;
+    position: absolute;
+    bottom: -120px;
+    z-index: 10;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.qr-code img {
+    width: 150px;
+    height: 150px;
+}
+
+.social-card:hover .qr-code {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 .social-card i {
     font-size: 3rem;
     margin-bottom: 1.5rem;
